@@ -1,6 +1,6 @@
 import "react-native-gesture-handler";
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet } from "react-native";
+import { StyleSheet, Button } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
@@ -43,7 +43,9 @@ export default function App() {
             name="MealDetail"
             component={MealDetailScreen}
             // options={{
-            //   title: "All Categories",
+            //   headerRight: () => {
+            //     return <Button title="tap me" onPress={} />
+            //   },
             // }}
           />
         </Stack.Navigator>
